@@ -1,0 +1,75 @@
+<svg width="800" height="350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=VT323&amp;display=swap');
+
+      /* The Horizontal "Wind" Animation */
+      @keyframes lateral-flow {
+        0% {
+          transform: translateX(-100%) translateY(-20px);
+          opacity: 0;
+        }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% {
+          /* Move far right and slightly down for a wind effect */
+          transform: translateX(150%) translateY(60px); 
+          opacity: 0;
+        }
+      }
+
+      /* Base text style */
+      .matrix-text {
+        font-family: 'VT323', monospace;
+        fill: #00FF00; /* Classic bright green */
+        filter: url(#neon-glow); /* Apply the advanced glow filter */
+        white-space: pre; /* Ensure spaces between names are respected */
+      }
+
+      /* Variations in speed, size, and delay for depth */
+      
+      /* Layer 1: Foreground (Fast, Big, Bright) */
+      .layer-fore { font-size: 28px; opacity: 1.0; }
+      .speed-fast { animation: lateral-flow 6s linear infinite; }
+
+      /* Layer 2: Midground (Medium speed/size) */
+      .layer-mid { font-size: 20px; opacity: 0.7; }
+      .speed-med { animation: lateral-flow 9s linear infinite; }
+
+      /* Layer 3: Background (Slow, Small, Dim) */
+      .layer-back { font-size: 14px; opacity: 0.4; }
+      .speed-slow { animation: lateral-flow 15s linear infinite; }
+
+      /* Animation Delays to offset start times */
+      .delay-0 { animation-delay: 0s; }
+      .delay-1 { animation-delay: 1.5s; }
+      .delay-2 { animation-delay: 3s; }
+      .delay-3 { animation-delay: 4.5s; }
+      .delay-4 { animation-delay: -2s; } /* Negative delay starts animation immediately mid-way */
+      .delay-5 { animation-delay: -5s; }
+    </style>
+
+    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur5"/>
+      <feMerge>
+        <feMergeNode in="blur5"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#000000" />
+
+  <text x="-100" y="50" class="matrix-text layer-back speed-slow delay-4">MOHD SHABAN    MOHD SHABAN    MOHD SHABAN</text>
+  <text x="-150" y="120" class="matrix-text layer-back speed-slow delay-2">SHABAN MOHD    SHABAN MOHD    SHABAN MOHD</text>
+  <text x="-50" y="280" class="matrix-text layer-back speed-slow delay-5">MOHD SHABAN    MOHD SHABAN    MOHD SHABAN</text>
+
+  <text x="-200" y="80" class="matrix-text layer-mid speed-med delay-0">MOHD SHABAN    MOHD SHABAN</text>
+  <text x="-250" y="180" class="matrix-text layer-mid speed-med delay-3">SHABAN    MOHD SHABAN    MOHD</text>
+  <text x="-180" y="320" class="matrix-text layer-mid speed-med delay-1">MOHD SHABAN    MOHD SHABAN</text>
+
+  <text x="-300" y="150" class="matrix-text layer-fore speed-fast delay-5">MOHD SHABAN    MOHD SHABAN</text>
+  <text x="-350" y="250" class="matrix-text layer-fore speed-fast delay-2">MOHD SHABAN    MOHD SHABAN</text>
+  <text x="-100" y="300" class="matrix-text layer-fore speed-fast delay-0">SHABAN MOHD    SHABAN MOHD</text>
+
+</svg>
