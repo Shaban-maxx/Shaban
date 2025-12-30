@@ -1,8 +1,17 @@
-<h1 align="center">Hi 👋, I'm Mohd Shaban Nawaz</h1>
-<h3 align="center">A passionate Web Developer from India</h3>
+<div align="center">
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=shaban-maxx" alt="shaban-maxx" /></a> </p>
 
+<img src="https://readme-typing-svg.demolab.com?font=Inconsolata&weight=500&size=50&duration=4000&pause=200&color=A7A459&center=true&vCenter=true&multiline=true&repeat=false&random=false&width=1300&height=140&lines=Hello;I'm+Shaban%2C+a+Technophile+%E2%9C%A9" width="70%" />
+</div>
+<br><br>
+<p align="center">
+<a href="#"><img width="650px" src="https://readme-typing-svg.herokuapp.com?font=Ubuntu&color=58a6ff&size=22&center=true&lines=Hello,+World+👋;Welcome+to+My+Profile+💻;Happy+to+See+You+Here+😀;Feel+Free+to+Look+Around+✌;Reach+Me+Out+If+You+Need+Me+🎨🙌;Have+a+Great+Day+🌞"></a>
+</p>
+<br><br>
+
+<h3 align="center"> 1st Year CSE Student @ IILM | Backend Developer • Problem Solver</h3>
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=shaban-maxx&label=Profile%20views&color=0e75b6&style=flat" alt="shaban-maxx" /> </p>
 - 🌱 I’m currently learning **TypeScript, Python**
 
 - 📫 How to reach me **nawaz234msn@gmail.com**
